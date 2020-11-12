@@ -52,6 +52,7 @@
 
           <fieldset>
             <legend>Visitação</legend>
+          
 
             <div class="input-block">
               <label for="instructions">Instruções</label>
@@ -64,7 +65,7 @@
 
             <div class="input-block">
               <label for="opening_hours">Horário das visitas</label>
-              <input id="opening_hours" name="opening_hours" required />
+              <input id="opening_hours" name="opening_hours" required/>
             </div>
 
             <div class="input-block">
@@ -95,11 +96,11 @@
                 </button>
               </div>
 
-              <button type="submit" class="primary-button">Confirmar</button>
+              
             </div>
           </fieldset>
 
-          <div class="map-container">
+              <div class="map-container">
             <div id="mapid"></div>
             <input type="hidden" name="lat" />
             <input type="hidden" name="lng" />
@@ -152,10 +153,18 @@
             <button onclick="addPhotoField()" type="button">
               <img src="/images/add-file.svg" alt="Nova imagem" />
             </button>
+
+            
           </div>
+
+           <button type="submit" class="primary-button">Confirmar</button>
         </form>
       </main>
     </div>
+
+   
+
+        
 
     <script src="/scripts/page-create-orphanage.js"></script>
   </body>

@@ -9,14 +9,16 @@ const options = {
 }
 
 // get values from html
-const lat = document.querySelector('span[data-lat]').dataset.lat
-const lng = document.querySelector('span[data-lng]').dataset.lng
+const lat = document.querySelector("span[data-lat]").dataset.lat
+const lng = document.querySelector("span[data-lng]").dataset.lng
 
 //create map
 const map = L.map("mapid").setView([lat, lng], 15);
 
 //create and add tilelayer
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+
+
 
 
 //create icon

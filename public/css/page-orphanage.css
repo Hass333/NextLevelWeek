@@ -117,13 +117,14 @@ main {
   background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
   border: 1px solid #b3dae2;
   border-radius: 20px;
+  font-size: 15px;
 
   color: #5c8599;
 }
 
 .open-details .open-on-weekends {
   
-  
+  font-size: 15px;
   border-radius: 20px;
 
   
@@ -139,5 +140,13 @@ main {
   background: linear-gradient(154.16deg, #FCF0F4 7.85%, #ffffff 91.03%);
   border: 1px solid #FFBCD4;
   color: #FF999D;
+}
+
+.font {
+  font-size: 30px;
+}
+
+.font1 {
+  font-size: 15px;
 }
 

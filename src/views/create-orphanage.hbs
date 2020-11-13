@@ -8,6 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adicionar um orfanato | Happy</title>
+    <link rel="icon" href="/images/logo-icon.png" />
 
     <link
       rel="stylesheet"
@@ -31,6 +32,7 @@
     <link rel="stylesheet" href="/css/map.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
+    
   </head>
   <body>
     <div id="page-create-orphanage">
@@ -46,12 +48,10 @@
 
       <main class="animate-appear with-sidebar">
         <form action="save-orphanage" method="post" onsubmit="validate(event)">
-          <fieldset>
-            <legend>Dados</legend>
-          </fieldset>
+         
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend class="title">Visitação</legend>
           
 
             <div class="input-block">
@@ -100,17 +100,25 @@
             </div>
           </fieldset>
 
+           <fieldset class="title">
+            <legend>Dados</legend>
+          </fieldset>
+
               <div class="map-container">
             <div id="mapid"></div>
             <input type="hidden" name="lat" />
             <input type="hidden" name="lng" />
 
+            
+
             <footer>
-              <a href="#" id="select-point">
+              <a href="#" id="select-point" class="not-active">
                 Clique no mapa para adicionar a localização
               </a>
             </footer>
           </div>
+
+          
 
           <div class="input-block">
             <label for="name">Nome</label>

@@ -6,6 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ orphanage.name }} | Happy</title>
+  <link rel="icon" href="/images/logo-icon.png" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -53,16 +54,16 @@
         <div class="orphanage-details-content">
           <h1>{{orphanage.name}}</h1>
 
-          <p>{{orphanage.about}} </p>
+          <p class="font">{{orphanage.about}} </p>
 
           <div class="map-container">
             <div id="mapid"></div>
             <span>
-              {{orphanage.lat}}
-              {{orphanage.lng}}
+            {{orphanage.lat}}
+            {{orphanage.lng}}
             </span>
             <footer>
-              <a
+              <a class="font1"
                target="_blank"
                href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver rotas no Google Maps</a>
             </footer>
@@ -72,7 +73,7 @@
 
           <h2>Instruções para visitas</h2>
 
-          <p>
+          <p class="font1">
            {{orphanage.instructions}}
           </p>
 
@@ -95,23 +96,38 @@
               Não atendemos fim de semana
             {{/if}}
 
-           
+                
+
           </div>
+
+            
           
          
           
         </div>
+
+
+   
           
       </div>
+
+    
       
     </main>
+    
+
+
   </div>
+
 <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanage.whatsapp}}&text=Oi, quero conversar sobre visitas no {{orphanage.name}}" 
           target="_blank"
           class="primary-button" type="button">
             <img src="/images/whatsapp.svg" alt="Chamar no Whatsapp" />
             Entrar em contato
   <script src="/scripts/page-orphanage.js"></script>
+
 </body>
+
+
 
 </html>
